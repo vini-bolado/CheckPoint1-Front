@@ -28,4 +28,6 @@ documento.addEventListener("keydown", () => item.innerText = "Key Down" );
 documento.addEventListener("keypress", () => item.innerText = "Key Press" );
 
 // 2.1. Key Up
-documento.addEventListener("keyup", () => item.innerText = "Key Up" );
+documento.addEventListener("keyup", () => item.innerText = "Key Up" )
+
+//teste
