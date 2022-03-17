@@ -29,7 +29,7 @@ documento.addEventListener("keypress" , function(evento){
         sidebar.style.display = "block"
     
         } 
-    })
+    });
 
 
 
@@ -85,4 +85,4 @@ item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble C
 
 
  
-//!-------------------------------------------------------------------------------------4
+//!-------------------------------------------------------------------------------------
