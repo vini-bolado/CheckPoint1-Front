@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Johnny - 1 e 1.1
 
 
@@ -88,4 +86,3 @@ item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble C
 
  
 //!-------------------------------------------------------------------------------------4
->>>>>>> e2e7908a14b241b7874a9ef973641f6c7efcea06
