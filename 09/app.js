@@ -1,12 +1,88 @@
+// Johnny - 1 e 1.1
+
+
+
+
+
+
+//!-------------------------------------------------------------------------------------
+//*vinicius
+
+
+documento.addEventListener("keypress" , function(evento){ 
+
+    
+    //! Condicional pra saber se a tecla space foi pressionada
+    
+    
+        if(evento.code == "Space"){
+    
+    
+        //! Ocultar a tela
+    
+        sidebar.style.display = "none"
+    
+        }
+    
+        if(evento.code == ""){
+    
+        sidebar.style.display = "block"
+    
+        } 
+    })
+
+
+
+
+
+
+
+
+
+//!-------------------------------------------------------------------------------------
+// 3 Rafael 
+
 (function() {
 
-    //teste
-    
-    // Adicione sua implementação aqui...
-    // Tem total liberdade de alterar o documento HTML, CSS e JS.
+    let sidebarMenu = document.getElementById('sidebarMenu');
+    let btnAbrirMenu = document.getElementById('btnAbrirMenu');
+
+    e.addEventListener('dblclick', ()=>{
+        e.innerText = 'sidebarMenu';
+
+    })
+
+// 1.1. Click
+item.addEventListener("click", (evento) => evento.target.innerText = "Click" );
+
+// 1.2. Doble click
+item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble Click" );
 
 
-    // Um ótimo feedback para todos.
 
 
-})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+//!-------------------------------------------------------------------------------------4
