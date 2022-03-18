@@ -30,6 +30,16 @@ documento.addEventListener("keypress" , function(evento){
     } 
 });
 
+
+
+
+
+
+
+
+
+
+
     //! Primeira parte !!!!!!!
 
     var tabuleiro = document.querySelector(".tabuleiro");

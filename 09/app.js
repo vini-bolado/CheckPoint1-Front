@@ -1,37 +1,9 @@
-// Johnny - 1 e 1.1
+'use script'
 
 
-
-
-
-
-//!-------------------------------------------------------------------------------------
-//*vinicius
-
-
-documento.addEventListener("keypress" , function(evento){ 
-
-    
-    //! Condicional pra saber se a tecla space foi pressionada
-    
-    
-        if(evento.code == "Space"){
-    
-    
-        //! Ocultar a tela
-    
-        sidebar.style.display = "none"
-    
-        }
-    
-        if(evento.code == ""){
-    
-        sidebar.style.display = "block"
-    
-        } 
-    });
-
-
+document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
+    document.querySelector('.l-app')
+})
 
 
 
@@ -42,28 +14,26 @@ documento.addEventListener("keypress" , function(evento){
 //!-------------------------------------------------------------------------------------
 // 3 Rafael 
 
-(function() {
+    (function() {
 
-    let sidebarMenu = document.getElementById('sidebarMenu');
-    let btnAbrirMenu = document.getElementById('btnAbrirMenu');
+        let sidebarMenu = document.getElementById('sidebarMenu');
+       let btnAbrirMenu = document.getElementById('btnAbrirMenu');
 
-    e.addEventListener('dblclick', ()=>{
-        e.innerText = 'sidebarMenu';
+        e.addEventListener('dblclick', ()=>{
+            e.innerText = 'sidebarMenu';
 
-    })
+        })
 
-// 1.1. Click
-item.addEventListener("click", (evento) => evento.target.innerText = "Click" );
+     1.1. Click
+    item.addEventListener("click", (evento) => evento.target.innerText = "Click" );
 
-// 1.2. Doble click
-item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble Click" );
-
-
+     1.2. Doble click
+    item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble Click" );
 
 
 
 
-
+[]
 
 
 
@@ -73,6 +43,7 @@ item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble C
 
 
 
-});
+
+
 
 //--------------------------
