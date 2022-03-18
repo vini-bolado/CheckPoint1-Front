@@ -62,10 +62,10 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
 
         })
 
-     1.1. Click
+     //1.1. Click
     item.addEventListener("click", (evento) => evento.target.innerText = "Click" );
 
-     1.2. Doble click
+    // 1.2. Doble click
     item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble Click" );
 
 
@@ -79,7 +79,7 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
 
 
 
-
+    });
 
 
 
