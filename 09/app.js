@@ -1,8 +1,15 @@
 // Johnny - 1 e 1.1
+let documento = document.body;
+let botao = document.querySelector("button");
+let menu = document.querySelector("#side");
 
+//Eventos do mouse
+function clicar(evento){
+    evento.style.display = "#side"
+   }
 
-
-
+botao.addEventListener("click", () => clicar );
+botao.classList.add('.l-sidebar--open');
 
 
 //!-------------------------------------------------------------------------------------
