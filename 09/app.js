@@ -85,9 +85,11 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
             abrirMenu.setAttribute("disable");
 
 
-        // util? 
-        e.addEventListener('dblclick', function(evento) {
-            e.innerText = 'sidebarMenu';
+        // util??
+        
+            e.addEventListener('dblclick', function(evento) {
+                e.innerText = 'sidebarMenu';
+
 
         })
 
