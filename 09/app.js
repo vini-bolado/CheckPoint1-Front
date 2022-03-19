@@ -74,9 +74,9 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
 
             sidebar.style.display = "none"; 
 
-            else(evento.code = "dbClick")
+                else(evento.code = "dbClick")
 
-            sidebar.style.display == ""; 
+            sidebar.style.display == "block"; 
 
             //Adicionar atributo
             abrirMenu.setAttribute("disable", "false")
