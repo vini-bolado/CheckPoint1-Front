@@ -69,7 +69,6 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
             //alterei a linha 4 (button) para ha(desa)bilitar o "disable" ??
             //*tentar criar o disable pelo JS e não colocando no HTML
 
-            //Condicional
             if(evento.code = "dbClick")
 
             sidebar.style.display = "none"; 
@@ -98,7 +97,7 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
 
 
 
-[]
+    
 
 
 
