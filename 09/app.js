@@ -1,3 +1,4 @@
+
 // Johnny - 1 e 1.1
 let documento = document.body;
 let botao = true
@@ -59,22 +60,38 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
 
 //!-------------------------------------------------------------------------------------
 // 3 Rafael 
+//selecionar os elementos; criar rotina(função) e puxar evento do usuário 
 
-    (function() {
+        var abrirMenu = document.getElementById('abrirMenu');
 
-        let sidebarMenu = document.getElementById('sidebarMenu');
-       let btnAbrirMenu = document.getElementById('btnAbrirMenu');
+        function habilitarSidebar() {  
 
-        e.addEventListener('dblclick', ()=>{
+            //alterei a linha 4 (button) para ha(desa)bilitar o "disable" ??
+            //*tentar criar o disable pelo JS e não colocando no HTML
+
+            //Condicional
+            if(evento.code = "dbClick")
+
+            sidebar.style.display = "none"; 
+
+            else(evento.code = "dbClick")
+
+            sidebar.style.display == ""; 
+
+            //Adicionar atributo
+            abrirMenu.setAttribute("disable", "false")
+        }   
+            //Remove atributo
+            abrirMenu.setAttribute("disable");
+
+
+        // util? 
+        e.addEventListener('dblclick', function(evento) {
             e.innerText = 'sidebarMenu';
 
         })
 
-     //1.1. Click
-    item.addEventListener("click", (evento) => evento.target.innerText = "Click" );
 
-    // 1.2. Doble click
-    item.addEventListener("dblclick", (evento) => evento.target.innerText = "Doble Click" );
 
 
 
@@ -87,7 +104,6 @@ document.querySelector(".l-sidebar__btn").addEventListener('click', e =>{
 
 
 
-    });
 
 
 
