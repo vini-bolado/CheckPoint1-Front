@@ -1,15 +1,23 @@
 // Johnny - 1 e 1.1
 let documento = document.body;
-let botao = document.querySelector("button");
-let menu = document.querySelector("#side");
+let botao = true
 
 //Eventos do mouse
-function clicar(evento){
-    evento.style.display = "#side"
+function mostrar(){
+    document.getElementById("side").style.display = "block";
    }
 
-botao.addEventListener("click", () => clicar );
-botao.classList.add('.l-sidebar--open');
+
+   function Exibir() { // Quando clicar no botão.
+
+    if (visibilidade) {//Se a variável visibilidade for igual a true, então...
+        document.getElementById("side").style.display = "none";//Ocultamos a div
+        visibilidade = false;//alteramos o valor da variável para falso.
+    } else {//ou se a variável estiver com o valor false..
+        document.getElementById("side").style.display = "block";//Exibimos a div..
+        visibilidade = true;//Alteramos o valor da variável para true.
+    }
+}
 
 
 //!-------------------------------------------------------------------------------------
