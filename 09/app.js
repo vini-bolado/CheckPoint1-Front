@@ -1,11 +1,12 @@
 
 // Johnny - 1 e 1.1
 let documento = document.body;
-let sidebar = true
+let menu = document.querySelector("button")
+let botao = true
 
 //Eventos do mouse
 function clicar(evento){
-    evento.target.addEventListener = 'click'
+    evento.target.addEventListener = ''
    }
 //função sidebar
 function mostrar(){
