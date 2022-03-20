@@ -1,12 +1,11 @@
 
 // // Johnny - 1 e 1.1
-let botao = document.querySelector("button");
-let btn = true;
+let botao = document.querySelector(".l-sidebar__btn");
 let sidebar = document.querySelector("div.l-sidebar");
 
-botao.onclick = function(btn) {
+botao.onclick = function() {
     sidebar.classList.toggle("active");
-    btn.addEventListener.display.classList(".l-sidebar");
+    
 };
 
 
