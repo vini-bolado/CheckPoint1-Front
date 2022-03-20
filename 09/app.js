@@ -1,8 +1,12 @@
 // Johnny - 1 e 1.1
 let documento = document.body;
-let botao = true
+let sidebar = true
 
 //Eventos do mouse
+function clicar(evento){
+    evento.target.addEventListener = 'click'
+   }
+//função sidebar
 function mostrar(){
     document.getElementById("side").style.display = "block";
    }
