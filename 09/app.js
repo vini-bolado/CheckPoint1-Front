@@ -1,13 +1,13 @@
 
 // // Johnny - 1 e 1.1
-// let botao = document.querySelector("button");
-// let btn = true;
-// let sidebar = document.querySelector("div.l-sidebar");
+let botao = document.querySelector("button");
+let btn = true;
+let sidebar = document.querySelector("div.l-sidebar");
 
-// botao.onclick = function(btn) {
-//     sidebar.classList.toggle("active");
-//     btn.addEventListener.display.classList(".l-sidebar");
-// };
+botao.onclick = function(btn) {
+    sidebar.classList.toggle("active");
+    btn.addEventListener.display.classList(".l-sidebar");
+};
 
 
 
@@ -86,3 +86,4 @@ document.addEventListener("keydown", (evento) => {
 
 
 //--------------------------
+});
