@@ -1,16 +1,4 @@
 
-// // Johnny - 1 e 1.1
-
-
-// let btn = true;
-// let sidebar = document.querySelector("div.l-sidebar");
-
-// botao.onclick = function(btn) {
-//     sidebar.classList.toggle("active");
-//     btn.addEventListener.display.classList(".l-sidebar");
-// };
-
-
 
 //!-------------------------------------------------------------------------------------
 //*vinicius
@@ -61,13 +49,7 @@ document.addEventListener("keydown", (evento) => {
 
 
     
-   
-var menuButton = document.getElementById('l-sidebar__btn');
 
-menuButton.addEventListener("click", (evento) => {
-    console.log(evento)
-});
- 
 
 
     
@@ -129,3 +111,4 @@ menuButton.addEventListener("click", (evento) => {
 
 
 //--------------------------
+});
