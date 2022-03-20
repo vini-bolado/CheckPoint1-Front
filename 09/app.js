@@ -1,6 +1,3 @@
-
-
-//!-------------------------------------------------------------------------------------
 //*vinicius
 
 
@@ -19,6 +16,7 @@ function sideB(){
 sideB()
 
 //! 2 parte
+
 function AbrirFechar(){
 
     var auxiliar = sideBar.classList[1]
@@ -28,7 +26,7 @@ function AbrirFechar(){
        sideBar.classList.remove('l-sidebar--close')
        sideBar.classList.add('l-sidebar--open')
 
-    }else {
+    }else{
 
        sideBar.classList.remove('l-sidebar--open')
        sideBar.classList.add('l-sidebar--close')
@@ -54,11 +52,6 @@ document.addEventListener("keydown", (evento) => {
 
     
 
-
-
-
-
-
 //!-------------------------------------------------------------------------------------
 //3 Rafael 
 //selecionar os elementos; criar rotina(função) e puxar evento do usuário 
@@ -67,7 +60,7 @@ document.addEventListener("keydown", (evento) => {
 
         function habilitarSidebar() {  
 
-            //alterei a linha 4 (button) para ha(desa)bilitar o "disable" ??
+        
             //*tentar criar o disable pelo JS e não colocando no HTML
 
             if(evento.code = "dbClick")
@@ -93,22 +86,3 @@ document.addEventListener("keydown", (evento) => {
 
         })
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-//--------------------------
-});
