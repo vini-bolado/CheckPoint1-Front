@@ -1,7 +1,6 @@
 //*vinicius
 
 
-
 var documento = document.body;
 var sideBar = document.querySelector(".l-sidebar");
 
@@ -34,7 +33,6 @@ function AbrirFechar(){
     }
 
    }
-
 
 
 document.addEventListener("keydown", (evento) => {
