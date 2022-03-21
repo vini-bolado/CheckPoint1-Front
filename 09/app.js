@@ -2,7 +2,8 @@
 documento = document.body;
 var Button = document.getElementById('l-sidebar__btn');
 var sideBar = document.getElementById('l-sidebar');
-
+var botao = document.querySelector(".l-sidebar__btn");
+botao.setAttribute("disabled", true);
 
 
 //1.1 - Johnny
