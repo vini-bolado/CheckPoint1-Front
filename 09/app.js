@@ -11,7 +11,7 @@ botao.setAttribute("disabled", true);
 Button.addEventListener("click", AbrirFechar);
 sideBar.addEventListener("click", AbrirFechar);
 
-// 2 parte - Vinicius
+// 2 parte - Vinicius ------------------------------------------------------------
 
 function sideB(){
 
@@ -47,7 +47,7 @@ document.addEventListener("keydown", (key) => {
 
 
 //!-------------------------------------------------------------------------------------
-//3 - Johnny
+//3 - Rafael
 document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
