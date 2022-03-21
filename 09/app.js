@@ -10,8 +10,6 @@ var sideBar = document.getElementById('l-sidebar');
 Button.addEventListener("click", AbrirFechar);
 sideBar.addEventListener("click", AbrirFechar);
 
-
-
 // 2 parte - Vinicius
 
 function sideB(){
