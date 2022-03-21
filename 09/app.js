@@ -84,12 +84,13 @@ document.addEventListener("keydown", (evento) => {
             abrirMenu.setAttribute("disable", "false")
         }   
             //Remove atributo
-            //abrirMenu.setAttribute("disable");
+            abrirMenu.setAttribute("disable");
 
 
         // util??
         
-            //e.addEventListener('dblclick', function(evento) {
-                //e.innerText = 'sidebarMenu';
+            e.addEventListener('dblclick', function(evento) {
+                e.innerText = 'sidebarMenu';
 
 
+        });
