@@ -54,15 +54,28 @@ document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
 
+
+var caixaTexto = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', function(m){
+
+    var xPos = m.pageX - 15;
+    var yPos = m.pageY - 15;
+
+    caixaTexto.style.left = xPos + 'px';
+    caixaTexto.style.top = yPos + 'px';
+
+});
+
+
+caixaTexto.addEventListener('mouseover', function (contatos){ 
+    
+
+    caixaTexto.target.innerText = "Sobre mim";
+    
+});
+
+
 var sobreMim = document.querySelector("#sobre-mim");
 
-function exibirbemVindo() {
-    sobreMim.setAttribute("title", "Sobre mim");
-  }
-  
-  sobreMim.addEventListener("mousemove", exibirbemVindo);
-  
-  function exibirbemVindo() {
-    sobreMim.setAttribute("title", "Sobre mim");
-  }
 
