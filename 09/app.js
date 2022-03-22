@@ -54,7 +54,7 @@ document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
 
-let bemVindo = document.querySelector("#sobre-mim");
+var bemVindo = document.querySelector("#sobre-mim");
 
 function exibirbemVindo() {
     bemVindo.setAttribute("title", "Bem vindo");
