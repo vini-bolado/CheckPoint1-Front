@@ -1,9 +1,12 @@
 // 1 - Johnny
 var documento = document.body
 var Button = document.getElementById("l-sidebar__btn");
+var app = document.querySelector(".l-app");
 var sideBar = document.getElementById("l-sidebar");
 var botao = document.querySelector(".l-sidebar__btn");
-var home = document.querySelector("#bg__profile");
+var pagina = document.querySelector("#bg__profile");
+var sobremim = document.querySelector("#sobre-mim");
+var contato = documento.querySelector("#contatos");
 var controle = 0;
 
 
@@ -51,7 +54,7 @@ document.addEventListener("keydown", (key) => {
 
 //3 - Johnny
 
-document.addEventListener("dblclick", AbrirFechar);
+app.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
 
@@ -60,8 +63,8 @@ var caixaTexto = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', function(m){
 
-    var xPos = m.pageX - 15;
-    var yPos = m.pageY - 15;
+    var xPos = m.pageX + 15;
+    var yPos = m.pageY + 15;
 
     caixaTexto.style.left = xPos + 'px';
     caixaTexto.style.top = yPos + 'px';
@@ -69,11 +72,19 @@ document.addEventListener('mousemove', function(m){
 });
 
 
-caixaTexto.addEventListener('mouseover', function (e){ 
+pagina.addEventListener('mouseover', function (e){ 
+    caixaTexto.innerHTML = "Bem Vindo!";
     
+});
 
-    e.target.innerText = "Sobre mim";
-    
+sobremim.addEventListener('mouseover', function (e){ 
+    caixaTexto.innerHTML = "Sobre Mim!";
+
+});
+
+contato.addEventListener('mouseover', function (e){ 
+    caixaTexto.innerHTML = "Entre em Contato!";
+
 });
 
 
