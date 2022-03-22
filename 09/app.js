@@ -54,15 +54,15 @@ document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
 
-var bemVindo = document.querySelector("#sobre-mim");
+var sobreMim = document.querySelector("#sobre-mim");
 
 function exibirbemVindo() {
-    bemVindo.setAttribute("title", "Bem vindo");
+    sobreMim.setAttribute("title", "Sobre mim");
   }
   
-  bemVindo.addEventListener("mousemove", exibirbemVindo);
+  sobreMim.addEventListener("mousemove", exibirbemVindo);
   
-  function exibirTooltipSobreMim() {
-    sobre.setAttribute("title", "Sobre mim");
+  function exibirbemVindo() {
+    sobreMim.setAttribute("title", "Sobre mim");
   }
 
