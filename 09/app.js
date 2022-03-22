@@ -76,6 +76,5 @@ caixaTexto.addEventListener('mouseover', function (contatos){
 });
 
 
-var sobreMim = document.querySelector("#sobre-mim");
 
 
