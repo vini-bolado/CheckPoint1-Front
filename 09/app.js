@@ -3,8 +3,8 @@ var documento = document.body
 var Button = document.getElementById("l-sidebar__btn");
 var sideBar = document.getElementById("l-sidebar");
 var botao = document.querySelector(".l-sidebar__btn");
-var home = document.querySelector("#bg__profile")
-botao.setAttribute("disabled", true);
+var home = document.querySelector("#bg__profile");
+var controle = 0;
 
 
 //1.1 - Johnny
