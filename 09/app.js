@@ -1,5 +1,5 @@
 // 1 - Johnny
-documento = document.body;
+var documento = document.body
 var Button = document.getElementById('l-sidebar__btn');
 var sideBar = document.getElementById('l-sidebar');
 var botao = document.querySelector(".l-sidebar__btn");
@@ -8,10 +8,10 @@ botao.setAttribute("disabled", true);
 
 //1.1 - Johnny
 
-Button.addEventListener("click", AbrirFechar);
-sideBar.addEventListener("click", AbrirFechar);
+document.addEventListener("click", AbrirFechar);
+document.addEventListener("click", AbrirFechar);
 
-// 2 parte - Vinicius
+// 2 parte - Vinicius ------------------------------------------------------------
 
 function sideB(){
 
@@ -47,8 +47,12 @@ document.addEventListener("keydown", (key) => {
 
 
 //!-------------------------------------------------------------------------------------
+<<<<<<< HEAD
 //3 - Johnny
 
+=======
+//3 - 
+>>>>>>> 0f089fef92703c40099ee881cd6026d0ac5c96e7
 document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
