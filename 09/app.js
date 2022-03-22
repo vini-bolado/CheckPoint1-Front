@@ -1,10 +1,9 @@
 // 1 - Johnny
 var documento = document.body
-var Button = document.getElementById('l-sidebar__btn');
+var Button = document.getElementById("l-sidebar__btn");
 var sideBar = document.getElementById("l-sidebar");
-var controle = 0;
 var botao = document.querySelector(".l-sidebar__btn");
-var home = document.getElementById("")
+var home = document.querySelector("#bg__profile")
 botao.setAttribute("disabled", true);
 
 
