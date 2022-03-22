@@ -48,8 +48,20 @@ document.addEventListener("keydown", (key) => {
 
 //!-------------------------------------------------------------------------------------
 //3 - Johnny
+
 document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
 
+let bemVindo = document.querySelector("#sobre-mim");
+
+function exibirbemVindo() {
+    bemVindo.setAttribute("title", "Bem vindo");
+  }
+  
+  bemVindo.addEventListener("mousemove", exibirbemVindo);
+  
+  function exibirTooltipSobreMim() {
+    sobre.setAttribute("title", "Sobre mim");
+  }
 
