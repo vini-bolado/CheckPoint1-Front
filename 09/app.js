@@ -10,8 +10,8 @@ botao.setAttribute("disabled", true);
 
 //1.1 - Johnny
 
-Button.addEventListener("click", AbrirFechar);
-sideBar.addEventListener("click", AbrirFechar);
+document.addEventListener("click", AbrirFechar);
+document.addEventListener("click", AbrirFechar);
 
 // 2 parte - Vinicius ------------------------------------------------------------
 
@@ -49,9 +49,34 @@ document.addEventListener("keydown", (key) => {
 
 
 //!-------------------------------------------------------------------------------------
-//3 - Rafael
+
+//3 - Johnny
+
 document.addEventListener("dblclick", AbrirFechar);
 
 // 4 - Todos ---------------------------------------------------------------------------
+
+
+var caixaTexto = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', function(m){
+
+    var xPos = m.pageX - 15;
+    var yPos = m.pageY - 15;
+
+    caixaTexto.style.left = xPos + 'px';
+    caixaTexto.style.top = yPos + 'px';
+
+});
+
+
+caixaTexto.addEventListener('mouseover', function (e){ 
+    
+
+    e.target.innerText = "Sobre mim";
+    
+});
+
+
 
 

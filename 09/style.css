@@ -161,3 +161,14 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+
+.cursor{
+    width: 150px;
+    height: 150PX;
+    display: block;
+    position: absolute;
+    background : white;
+    border: 30px 50px 50px 50px , pink;
+    color: black;
+}
