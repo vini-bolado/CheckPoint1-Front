@@ -68,10 +68,10 @@ document.addEventListener('mousemove', function(m){
 });
 
 
-caixaTexto.addEventListener('mouseover', function (contatos){ 
+caixaTexto.addEventListener('mouseover', function (e){ 
     
 
-    caixaTexto.target.innerText = "Sobre mim";
+    e.target.innerText = "Sobre mim";
     
 });
 
