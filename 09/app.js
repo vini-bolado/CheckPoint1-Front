@@ -8,8 +8,8 @@ botao.setAttribute("disabled", true);
 
 //1.1 - Johnny
 
-Button.addEventListener("click", AbrirFechar);
-sideBar.addEventListener("click", AbrirFechar);
+document.addEventListener("click", AbrirFechar);
+document.addEventListener("click", AbrirFechar);
 
 // 2 parte - Vinicius ------------------------------------------------------------
 
