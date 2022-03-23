@@ -2,7 +2,7 @@
 var documento = document.body
 var Button = document.getElementById("l-sidebar__btn");
 var app = document.querySelector(".l-app");
-var sideBar = document.getElementById("l-sidebar");
+var sideBar = document.querySelector("#l-sidebar");
 var botao = document.querySelector(".l-sidebar__btn");
 var pagina = document.querySelector("#bg__profile");
 var sobremim = document.querySelector("#sobre-mim");
@@ -12,18 +12,27 @@ var controle = 0;
 
 //1.1 - Johnny
 
-document.addEventListener("click", AbrirFechar);
-document.addEventListener("click", AbrirFechar);
+botao.addEventListener("click", () => {
+        sideBar.classList.add("l-sidebar--open");
+        console.log(sideBar);
+    })
+
+sideBar.addEventListener("click", () => {
+        sideBar.classList.remove("l-sidebar--open");
+        sideBar.classList.add("l-sidebar--close");
+        sideBar.classList.remove("l-sidebar--close");
+    });
+
 
 // 2 parte - Vinicius ------------------------------------------------------------
 
-function sideB(){
+// function sideB(){
 
-sideBar.classList.add('l-sidebar--close')
+// sideBar.classList.add('l-sidebar--close')
 
-}
+// }
 
-sideB()
+// sideB()
 
 function AbrirFechar(){
 
@@ -43,18 +52,38 @@ sideBar.classList.add('l-sidebar--close')
 
 };
 
-document.addEventListener("keydown", (key) => { 
+documento.addEventListener("keydown", (key) => { 
     if (key.code == "Space") {
-        AbrirFechar()
+        if (controle == 0) {
+            sideBar.classList.add("l-sidebar--open");
+            controle = 1;
+        } else {
+            sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.add("l-sidebar--close");
+            sideBar.classList.remove("l-sidebar--close");
+            controle = 0;
+        }
     }
-})
+
+    });
 
 
 //!-------------------------------------------------------------------------------------
 
 //3 - Johnny
 
-app.addEventListener("dblclick", AbrirFechar);
+app.addEventListener("dblclick", function(){
+    if (controle == 0) {
+        sideBar.classList.add("l-sidebar--open");
+        controle = 1;
+    } else {
+        sideBar.classList.remove("l-sidebar--open");
+        sideBar.classList.add("l-sidebar--close");
+        sideBar.classList.remove("l-sidebar--close");
+        controle = 0;
+    
+    }
+});
 
 // 4 - Todos ---------------------------------------------------------------------------
 
