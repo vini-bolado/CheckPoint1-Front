@@ -25,7 +25,7 @@ sideBar.addEventListener("click", () => {
 
 
 // 2 parte - Vinicius ------------------------------------------------------------
-
+//Função que pode ser usada.
 // function sideB(){
 
 // sideBar.classList.add('l-sidebar--close')
@@ -34,23 +34,23 @@ sideBar.addEventListener("click", () => {
 
 // sideB()
 
-function AbrirFechar(){
+// function AbrirFechar(){
 
-var auxiliar = sideBar.classList[1]
+// var auxiliar = sideBar.classList[1]
 
-    if (auxiliar == 'l-sidebar--close'){
+//     if (auxiliar == 'l-sidebar--close'){
 
-sideBar.classList.remove('l-sidebar--close')
-sideBar.classList.add('l-sidebar--open')
+// sideBar.classList.remove('l-sidebar--close')
+// sideBar.classList.add('l-sidebar--open')
     
-    }else{
+//     }else{
 
-sideBar.classList.remove('l-sidebar--open')
-sideBar.classList.add('l-sidebar--close')
+// sideBar.classList.remove('l-sidebar--open')
+// sideBar.classList.add('l-sidebar--close')
 
-}
+// }
 
-};
+// };
 
 documento.addEventListener("keydown", (key) => { 
     if (key.code == "Space") {
