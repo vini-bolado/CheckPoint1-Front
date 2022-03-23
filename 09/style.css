@@ -165,10 +165,12 @@ body {
 
 .cursor{
     width: 150px;
-    height: 150PX;
-    display: block;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
     position: absolute;
-    background : white;
-    border: 30px 50px 50px 50px , pink;
-    color: black;
+    background : rgba(94, 86, 86, 0.399);
+    /* border: 30px 50px 50px 50px , none; */
+    color: white;
 }
