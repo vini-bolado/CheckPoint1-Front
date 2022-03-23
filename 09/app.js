@@ -1,9 +1,8 @@
 // 1 - Johnny
 var documento = document.body
-var Button = document.getElementById("l-sidebar__btn");
 var app = document.querySelector(".l-app");
 var sideBar = document.querySelector("#l-sidebar");
-var botao = document.querySelector(".l-sidebar__btn");
+var botao = document.querySelector("#l-sidebar__btn");
 var pagina = document.querySelector("#bg__profile");
 var sobremim = document.querySelector("#sobre-mim");
 var contato = documento.querySelector("#contatos");
@@ -12,45 +11,40 @@ var controle = 0;
 
 //1.1 - Johnny
 
-botao.addEventListener("click", () => {
-        sideBar.classList.add("l-sidebar--open");
-        console.log(sideBar);
+botao.addEventListener("click",  AbrirFechar(), {
     })
 
-sideBar.addEventListener("click", () => {
-        sideBar.classList.remove("l-sidebar--open");
-        sideBar.classList.add("l-sidebar--close");
-        sideBar.classList.remove("l-sidebar--close");
+sideBar.addEventListener("click", AbrirFechar(), {
+        
     });
 
 
 // 2 parte - Vinicius ------------------------------------------------------------
-//Função que pode ser usada.
-// function sideB(){
+function sideB(){
 
-// sideBar.classList.add('l-sidebar--close')
+sideBar.classList.add('l-sidebar--close')
 
-// }
+}
 
-// sideB()
+sideB()
 
-// function AbrirFechar(){
+function AbrirFechar(){
 
-// var auxiliar = sideBar.classList[1]
+var auxiliar = sideBar.classList[1]
 
-//     if (auxiliar == 'l-sidebar--close'){
+    if (auxiliar == 'l-sidebar--close'){
 
-// sideBar.classList.remove('l-sidebar--close')
-// sideBar.classList.add('l-sidebar--open')
+sideBar.classList.remove('l-sidebar--close')
+sideBar.classList.add('l-sidebar--open')
     
-//     }else{
+    }else{
 
-// sideBar.classList.remove('l-sidebar--open')
-// sideBar.classList.add('l-sidebar--close')
+sideBar.classList.remove('l-sidebar--open')
+sideBar.classList.add('l-sidebar--close')
 
-// }
+}
 
-// };
+};
 
 documento.addEventListener("keydown", (key) => { 
     if (key.code == "Space") {
