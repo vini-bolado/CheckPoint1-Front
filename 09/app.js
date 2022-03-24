@@ -25,6 +25,7 @@ botao.addEventListener("click", function(evento){
         }}
 
 });
+
 var h1 = document.querySelector("h1");
 h1.addEventListener("click", (evento) => {
     if (evento) {
@@ -38,8 +39,7 @@ h1.addEventListener("click", (evento) => {
             sideBar.classList.add("l-sidebar--close");
             controle = 0;
         }}
-    // sideBar.classList.remove("l-sidebar--open");
-    // sideBar.classList.add("l-sidebar--close");
+
 });
 
 
