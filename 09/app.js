@@ -1,4 +1,4 @@
-// 1 - Johnny
+// 1
 var documento = document.body
 var app = document.querySelector(".l-app");
 var sideBar = document.querySelector("#l-sidebar");
@@ -9,7 +9,7 @@ var contato = document.querySelector("#contatos");
 var controle = 0;
 
 
-//1.1 - Johnny
+//1.1
 
 botao.addEventListener("click", function(evento){
     if (evento) {
@@ -77,7 +77,7 @@ documento.addEventListener("keydown", (key) => {
 
 //!-------------------------------------------------------------------------------------
 
-//3 - Johnny
+//3.
 
 app.addEventListener("dblclick", function(evento){
     if (evento) {
