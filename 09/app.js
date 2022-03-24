@@ -26,7 +26,7 @@ botao.addEventListener("click", function(evento){
 
 });
 
-var h1 = document.querySelector("h1");
+var h1 = document.querySelector(".l-sidebar1");
 h1.addEventListener("click", (evento) => {
     if (evento) {
         if (controle == 0) {
