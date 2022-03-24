@@ -2,7 +2,7 @@
 var documento = document.body
 var app = document.querySelector(".l-app");
 var sideBar = document.querySelector("#l-sidebar");
-var botao = document.querySelector("#l-sidebar__btn");
+var botao = document.querySelector(".l-sidebar__btn");
 var pagina = document.querySelector("#bg__profile");
 var sobremim = document.querySelector("#sobre-mim");
 var contato = document.querySelector("#contatos");
@@ -25,9 +25,21 @@ botao.addEventListener("click", function(evento){
         }}
 
 });
-
-sideBar.addEventListener("click", () => {
-    sideBar.classList.add("l-sidebar--close");
+var h1 = document.querySelector("h1");
+h1.addEventListener("click", (evento) => {
+    if (evento) {
+        if (controle == 0) {
+            sideBar.classList.add("l-sidebar--open");
+            // sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.remove("l-sidebar--close");
+            controle = 1;
+        } else {
+            sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.add("l-sidebar--close");
+            controle = 0;
+        }}
+    // sideBar.classList.remove("l-sidebar--open");
+    // sideBar.classList.add("l-sidebar--close");
 });
 
 
