@@ -5,56 +5,69 @@ var sideBar = document.querySelector("#l-sidebar");
 var botao = document.querySelector("#l-sidebar__btn");
 var pagina = document.querySelector("#bg__profile");
 var sobremim = document.querySelector("#sobre-mim");
-var contato = documento.querySelector("#contatos");
+var contato = document.querySelector("#contatos");
 var controle = 0;
 
 
 //1.1 - Johnny
 
-botao.addEventListener("click",  AbrirFechar(), {
-    })
+botao.addEventListener("click", function(evento){
+    if (evento) {
+        if (controle == 0) {
+            sideBar.classList.add("l-sidebar--open");
+            // sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.remove("l-sidebar--close");
+            controle = 1;
+        } else {
+            sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.add("l-sidebar--close");
+            controle = 0;
+        }}
 
-sideBar.addEventListener("click", AbrirFechar(), {
-        
-    });
+});
+
+sideBar.addEventListener("click", () => {
+    sideBar.classList.add("l-sidebar--close");
+});
 
 
 // 2 parte - Vinicius ------------------------------------------------------------
-function sideB(){
+// function sideB(){
 
-sideBar.classList.add('l-sidebar--close')
+// sideBar.classList.add('l-sidebar--close')
 
-}
+// }
 
-sideB()
+// sideB()
 
-function AbrirFechar(){
+// function AbrirFechar(){
 
-var auxiliar = sideBar.classList[1]
+// var auxiliar = sideBar.classList[1]
 
-    if (auxiliar == 'l-sidebar--close'){
+//     if (auxiliar == 'l-sidebar--close'){
 
-sideBar.classList.remove('l-sidebar--close')
-sideBar.classList.add('l-sidebar--open')
+// sideBar.classList.remove('l-sidebar--close')
+// sideBar.classList.add('l-sidebar--open')
     
-    }else{
+//     }else{
 
-sideBar.classList.remove('l-sidebar--open')
-sideBar.classList.add('l-sidebar--close')
+// sideBar.classList.remove('l-sidebar--open')
+// sideBar.classList.add('l-sidebar--close')
 
-}
+// }
 
-};
+// };
 
 documento.addEventListener("keydown", (key) => { 
     if (key.code == "Space") {
         if (controle == 0) {
             sideBar.classList.add("l-sidebar--open");
+            // sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.remove("l-sidebar--close");
             controle = 1;
         } else {
             sideBar.classList.remove("l-sidebar--open");
             sideBar.classList.add("l-sidebar--close");
-            sideBar.classList.remove("l-sidebar--close");
             controle = 0;
         }
     }
@@ -66,17 +79,18 @@ documento.addEventListener("keydown", (key) => {
 
 //3 - Johnny
 
-app.addEventListener("dblclick", function(){
-    if (controle == 0) {
-        sideBar.classList.add("l-sidebar--open");
-        controle = 1;
-    } else {
-        sideBar.classList.remove("l-sidebar--open");
-        sideBar.classList.add("l-sidebar--close");
-        sideBar.classList.remove("l-sidebar--close");
-        controle = 0;
-    
-    }
+app.addEventListener("dblclick", function(evento){
+    if (evento) {
+        if (controle == 0) {
+            sideBar.classList.add("l-sidebar--open");
+            // sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.remove("l-sidebar--close");
+            controle = 1;
+        } else {
+            sideBar.classList.remove("l-sidebar--open");
+            sideBar.classList.add("l-sidebar--close");
+            controle = 0;
+        }}
 });
 
 // 4 - Todos ---------------------------------------------------------------------------
@@ -109,7 +123,3 @@ contato.addEventListener('mouseover', function (e){
     caixaTexto.innerHTML = "Entre em Contato!";
 
 });
-
-
-
-
