@@ -26,8 +26,8 @@ botao.addEventListener("click", function(evento){
 
 });
 
-var h1 = document.querySelector(".l-sidebar1");
-h1.addEventListener("click", (evento) => {
+var fechar = document.querySelector(".l-sidebar1");
+fechar.addEventListener("click", (evento) => {
     if (evento) {
         if (controle == 0) {
             sideBar.classList.add("l-sidebar--open");
